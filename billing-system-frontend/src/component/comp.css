@@ -1,0 +1,195 @@
+/* -----------------------Header component--------------------*/
+
+.header{
+    background-color: rgb(59, 131, 165);
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.header-f{
+    display: inline-block;   
+}
+
+.header-name{
+    margin-left: 45px;
+    font-size: 25px;
+    font-family: arial;
+    background-color: rgb(204, 218, 230);
+    border: 1px solid rgb(204, 218, 230);
+    padding: 8px;
+    border-radius: 11px;
+    box-shadow: 20px 20px 20px -10px rgba(0,0,0,0.15),
+              inset 15px 15px 10px rgba(255,255,255,0.5),
+              -15px -15px 35px rgba(255,255,255,0.35),
+              inset -1px -1px 10px rgba(0,0,0,0.2);
+}
+
+.header-icon{
+    margin-right: 45px;
+    font-size: 25px;
+    background-color: rgb(204, 218, 230);
+    border: 1px solid rgb(204, 218, 230);
+    padding: 8px;
+    padding-bottom: 6px;
+    border-radius: 11px;
+    box-shadow: 20px 20px 20px -10px rgba(0,0,0,0.15),
+              inset 15px 15px 10px rgba(255,255,255,0.5),
+              -15px -15px 35px rgba(255,255,255,0.35),
+              inset -1px -1px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    
+}
+
+
+/* --------------------- Body Container ------------------------- */
+
+
+.body-container{
+    background-color: rgb(180, 207, 219);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 548px;
+}
+
+.body-f{
+    height: 130px;
+    width: 160px;
+    margin: 20px;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgba(67, 71, 90, 0.781);
+    padding: 8px;
+    padding-bottom: 6px;
+    border-radius: 11px;
+    box-shadow: 5px 5px 15px 0 rgb(67, 71, 90),
+              inset 5px 5px 5px rgba(255,255,255,0.35),
+              -6px -6px 10px rgba(255,255,255,1);
+}
+
+.body-text{
+    font-size: 23px;
+    font-family: arial;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    color: rgb(6, 6, 44);
+}
+
+.body-but{
+    border: none;
+    font-size: 15px;
+    font-family: arial;
+    font-weight: bold;
+    color: rgb(4, 61, 42);
+    padding: 8px 13px;
+    border-radius: 5px;
+    background-color: rgb(204, 218, 230);         
+    cursor: pointer;
+}
+
+
+/* -----------------------Store Table----------------------------------- */
+
+.store-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 548px;
+}
+
+.store-body{
+    background-color:  rgb(185, 226, 243);
+    border-radius: 5px;
+    padding: 0 15px;
+    box-shadow: 5px 5px 15px 0 rgb(67, 71, 90);
+}
+
+.store-head{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 3px;
+    right: -13px;
+    border-bottom: 1px solid #8b8686;
+}
+
+.store-head-close{
+    font-size: 35px;
+    color: red;
+    cursor: pointer;
+}
+
+.store-head-but{
+    border: none;
+    font-size: 15px;
+    font-family: arial;
+    font-weight: bold;
+    color: rgb(4, 61, 42);
+    padding: 8px 13px;
+    border-radius: 5px;
+    background-color: rgb(79, 233, 148);         
+    cursor: pointer;
+}
+
+.store-head-but:active{
+    background-color: rgba(79, 233, 148, 0.74);
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-family: arial;
+}
+
+.content-table th,
+.content-table td{
+    padding: 10px 12px;
+} 
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr td button {
+    border: none;
+    padding: 3px;
+    margin-left: 5px;
+    height: 27px;
+    width: 27px;
+    border-radius: 15px;
+    background-color: #73a17a;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.store-del{
+    color: red;
+
+}
+
+.content-table tbody tr td button:active{
+    background-color: #73a17ac7;
+}
