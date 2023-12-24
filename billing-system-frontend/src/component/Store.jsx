@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
+import { Link } from 'react-router-dom';
 
 export default function Store() {
 
@@ -19,8 +20,8 @@ export default function Store() {
         <div className='store-container'>
             <div className="store-body">
                 <div className="store-head">
-                    <button className='store-head-but'>Add New Item</button>
-                    <span className="store-head-close"><ion-icon name="close"></ion-icon></span>
+                    <Link className='store-head-but' to="/addItem">Add New Item</Link>
+                    <Link className="store-head-close" to = "/"><ion-icon name="close"></ion-icon></Link>
                 </div>
                 <div className="store-table">
                     <table className='content-table'>
@@ -44,7 +45,7 @@ export default function Store() {
                                         <td>{user.sgetprice}</td>
                                         <td>{user.ssellprice}</td>
                                         <td>
-                                            <button><ion-icon name="create-outline"></ion-icon></button>
+                                            <Link to="/editItem"><ion-icon name="create-outline"></ion-icon></Link>
                                             <button><span className='store-del'><ion-icon name="trash-outline"></ion-icon></span></button>
                                         </td>
                                     </tr>

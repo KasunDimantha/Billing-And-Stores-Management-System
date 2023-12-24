@@ -117,9 +117,20 @@
 }
 
 .store-head-close{
-    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
     color: red;
     cursor: pointer;
+
+}
+
+.store-head-close:hover{
+    background-color: #8b86868e;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
 }
 
 .store-head-but{
@@ -192,4 +203,104 @@
 
 .content-table tbody tr td button:active{
     background-color: #73a17ac7;
+}
+
+/* --------------------------Add Item -----------------------------------*/
+
+.addItem-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.addItem-body{
+    height: 380px;
+    width: 350px;
+    border: 1px solid rgb(6, 6, 44);
+    border-radius: 5px;
+    background-color: #89f399;
+}
+
+.addItem-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    background-color: #42e25a;
+}
+
+.addItem-head h4{
+    padding-left: 15px;
+    font-family: arial;
+    font-size: 20px;
+}
+
+.addItem-head-close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 25px;
+}
+
+.addItem-head-close:hover{
+    background-color: #8b86868e;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.addItems{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+}
+
+.addItem-lable{
+    font-size: 20px;
+    padding-bottom: 7px;
+    font-family: arial;
+}
+
+.addItem-control{
+    font-size: 15px;
+    font-family: arial;
+    outline: none;
+    padding: 3px 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.buttonItem{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttonItem button{
+    font-size: 15px;
+    font-family: arial;
+    padding: 5px 5px;
+    margin: 0 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button01{
+    background-color: rgba(255, 217, 0, 0.836);
+}
+
+.button01:active{
+    background-color: rgba(255, 217, 0, 0.705);
+}
+
+.button02{
+    background-color: rgba(255, 0, 0, 0.836);
+}
+
+.button02:active{
+    background-color: rgba(255, 0, 0, 0.678);
 }

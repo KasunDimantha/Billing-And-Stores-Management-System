@@ -8,7 +8,7 @@ export default function Body() {
         <div className="body-container">
             <div className="body-f">
                 <h4 className='body-text'>Billing System</h4>
-                <button  className='body-but'>New Order</button>
+                <Link  className='body-but' to="/bill">New Order</Link>
             </div>
             <div className="body-f">
                 <h4 className='body-text'>Check Storce</h4>
@@ -16,7 +16,7 @@ export default function Body() {
             </div>
             <div className="body-f">
                 <h4 className='body-text'>Check Order</h4>
-                <button  className='body-but'>View Order</button>
+                <Link  className='body-but' to="/order">View Order</Link>
             </div>
         </div> 
     </>

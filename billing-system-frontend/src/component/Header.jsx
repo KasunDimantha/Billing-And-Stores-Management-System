@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import './comp.css'
+import { Link } from 'react-router-dom'
 
 const Header = memo(() => {
   return (
@@ -9,7 +10,7 @@ const Header = memo(() => {
                 <h3 className='header-name'>Gamunu Storse</h3>
             </div>
             <div className="header-f">
-                <span className='header-icon'><ion-icon name="home"></ion-icon></span>
+                <Link className='header-icon' to="/"><ion-icon name="home"></ion-icon></Link>
             </div>
         </div>
     </>
