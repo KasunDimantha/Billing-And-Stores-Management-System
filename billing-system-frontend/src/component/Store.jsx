@@ -6,6 +6,7 @@ export default function Store() {
 
     const [users, setUser] = useState([]);
 
+
     useEffect(() => {
         loadUsers();
     }, []);
@@ -13,6 +14,12 @@ export default function Store() {
     const loadUsers = async() => {
         const result = await axios.get("http://localhost:8080/getItems");
         setUser(result.data);
+    }
+
+    const deleteUser = async (sid) => {
+        await axios.delete(`http://localhost:8080/deleteItemById/${sid}`)
+        loadUsers()
+
     }
 
   return (
@@ -46,7 +53,7 @@ export default function Store() {
                                         <td>{user.ssellprice}</td>
                                         <td>
                                             <Link to="/editItem"><ion-icon name="create-outline"></ion-icon></Link>
-                                            <button><span className='store-del'><ion-icon name="trash-outline"></ion-icon></span></button>
+                                            <button onClick={() => deleteUser(user.sid)}  ><span className='store-del'><ion-icon name="trash-outline"></ion-icon></span></button>
                                         </td>
                                     </tr>
                                 ))
